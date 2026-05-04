@@ -1,145 +1,163 @@
+
+
+  
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Комерційна пропозиція ОСББ «АкадемОселя»</title>
+  <title>ОСББ · вул. Стрілецька, 17</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f9f9f9; color:#333; }
-    header, footer { background:#0057b7; color:#fff; text-align:center; padding:20px; }
-    header img { height:60px; float:left; margin-right:20px; }
-    nav { background:#ffd700; padding:10px; text-align:center; }
-    nav a { margin:0 15px; text-decoration:none; color:#0057b7; font-weight:bold; }
-    section { padding:40px; border-bottom:2px solid #eee; }
-    h1, h2 { color:#0057b7; }
-    ul { margin:10px 0; }
-    .tariffs { display:flex; justify-content:space-around; margin-top:20px; }
-    .tariff-box { width:40%; padding:20px; border-radius:8px; text-align:center; }
-    .normative { background:#e6f0ff; }
-    .actual { background:#fff3cd; }
-    .highlight { font-size:24px; font-weight:bold; margin:10px 0; }
-    .balance { font-size:18px; font-weight:bold; color:#d9534f; }
-    footer p { margin:0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0057b7, #ffd700);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      font-size: 32px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+    }
+    section {
+      padding: 40px 60px;
+      background: white;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #0057b7;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    section h2::before {
+      content: "★";
+      color: #ffd700;
+      margin-right: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    table th {
+      background: #0057b7;
+      color: white;
+    }
+    .chart {
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      border-radius: 50%;
+      background: conic-gradient(#0057b7 0% 50%, #ffd700 50% 80%, #ccc 80% 100%);
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="emblema_osbb.png" alt="Емблема ОСББ">
-  <h1>Комерційна пропозиція ОСББ «АкадемОселя»</h1>
-  <p>вул. Стрілецька, 17 · 2026</p>
+  <h1>ОСББ · вул. Стрілецька, 17</h1>
+  <p>Презентаційний буклет · 2026</p>
 </header>
 
-<nav>
-  <a href="#profile">Профіль</a>
-  <a href="#object">Об’єкт</a>
-  <a href="#services">Послуги</a>
-  <a href="#finance">Фінанси</a>
-  <a href="#rhythm">Ритм</a>
-  <a href="#quality">Гарантії</a>
-  <a href="#terms">Умови</a>
-  <a href="#tariffs">Тарифи</a>
-  <a href="#contacts">Контакти</a>
-</nav>
-
-<section id="profile">
+<section>
   <h2>Профіль управителя</h2>
   <p><strong>ФОП Матвєєв Андрій Володимирович</strong><br>
   Сертифікат управителя · Досвід роботи · Модель управління</p>
 </section>
 
-<section id="object">
+<section>
   <h2>Об’єкт управління</h2>
-  <ul>
-    <li>Площа: 6 800 м²</li>
-    <li>Квартири: 6 700 м²</li>
-    <li>Нежитлові: 100 м²</li>
-    <li>Консьєржі, двірник, бухгалтер</li>
-  </ul>
+  <div class="grid">
+    <div>
+      <p>Площа: 6 800 м²</p>
+      <p>Квартири: 6 700 м²</p>
+      <p>Нежитлові: 100 м²</p>
+    </div>
+    <div>
+      <p>Команда: консьєрж, двірник, бухгалтер</p>
+    </div>
+  </div>
 </section>
 
-<section id="services">
+<section>
   <h2>Послуги управителя</h2>
   <p>Перелік за ЗУ «Про ЖКП»: технічне обслуговування, прибирання, аварійні роботи.</p>
 </section>
 
-<section id="finance">
+<section>
   <h2>Фінансова модель</h2>
-  <p><strong>Доходи:</strong> 247 801,45 грн/міс</p>
-  <ul>
-    <li>Мешканці: 165 333,78 грн</li>
-    <li>Нежитлові: 2 467,67 грн</li>
-    <li>Інші надходження: 80 000 грн</li>
-  </ul>
-  <p><strong>Витрати:</strong> 247 801,45 грн/міс</p>
-  <p class="balance">Баланс: 0 грн</p>
+  <table>
+    <tr>
+      <th>Стаття</th>
+      <th>Сума (грн)</th>
+    </tr>
+    <tr>
+      <td>Прибирання</td>
+      <td>25 000</td>
+    </tr>
+    <tr>
+      <td>Технічне обслуговування</td>
+      <td>40 000</td>
+    </tr>
+    <tr>
+      <td>Аварійні роботи</td>
+      <td>15 000</td>
+    </tr>
+    <tr>
+      <th>Разом</th>
+      <th>80 000</th>
+    </tr>
+  </table>
+  <div class="chart"></div>
+  <p style="text-align:center;">Діаграма витрат: синій – технічне, жовтий – прибирання, сірий – аварійні роботи</p>
 </section>
 
-<section id="rhythm">
-  <h2>Ритм взаємодії</h2>
-  <ul>
-    <li>Щодня: консьєржі, прибирання</li>
-    <li>Щотижня: звітність, ТО систем</li>
-    <li>Щомісяця: баланс, збори</li>
-    <li>Щороку: аудит, план капремонту</li>
-  </ul>
+<section>
+  <h2>Тарифи</h2>
+  <p>Пропонований тариф: <strong>12 грн/м²</strong></p>
 </section>
 
-<section id="quality">
-  <h2>Гарантії якості</h2>
-  <ul>
-    <li>Прозорість кошторису</li>
-    <li>Права співвласників</li>
-    <li>Перерахунок у разі невиконання</li>
-  </ul>
-</section>
-
-<section id="terms">
-  <h2>Умови співпраці</h2>
-  <ul>
-    <li>Договір на 1 рік з пролонгацією</li>
-    <li>Тариф: 24,68 грн/м²/міс</li>
-    <li>Баланс: 0 грн</li>
-    <li>Старт: до 20 днів після підписання</li>
-  </ul>
-</section>
-
-<section id="tariffs">
-  <h2>Порівняння тарифів</h2>
-  <div class="tariffs">
-    <div class="tariff-box normative">
-      <h3>Нормативний тариф</h3>
-      <p>Наказ Мінрегіону №190</p>
-      <div class="highlight">18,26 грн/м²/міс</div>
-      <ul>
-        <li>Мінімальна зарплата</li>
-        <li>Базові витрати</li>
-      </ul>
-    </div>
-    <div class="tariff-box actual">
-      <h3>Фактичний тариф</h3>
-      <p>Кошторис ОСББ 2026</p>
-      <div class="highlight">24,68 грн/м²/міс</div>
-      <ul>
-        <li>Консьєржі, бухгалтер</li>
-        <li>Охорона, резерв</li>
-        <li>Додаткові послуги</li>
-      </ul>
-    </div>
-  </div>
-  <p style="text-align:center; margin-top:20px;">
-    Фактичний тариф покриває усі реальні витрати будинку
-  </p>
-</section>
-
-<section id="contacts">
+<section>
   <h2>Контакти</h2>
-  <p>ФОП Матвєєв Андрій Володимирович<br>
-  Телефон · Email · Telegram</p>
+  <p>Email: osbb.striletska17@example.com<br>
+  Телефон: +380 67 000 00 00</p>
 </section>
 
-<footer>
-  <p>© ОСББ «АкадемОселя» · 2026</p>
-</footer>
+<div class="footer">
+  © 2026 ОСББ вул. Стрілецька, 17 · Презентаційний буклет
+</div>
 
 </body>
 </html>
